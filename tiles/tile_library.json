@@ -1,0 +1,422 @@
+{
+  "version": "1.0",
+  "format": "WFC-TILE-LIBRARY",
+  "gridSize": 5,
+  "rotationalSymmetry": true,
+  "supportedRotations": [0, 90, 180, 270],
+  "tiles": [
+    {
+      "id": "T001",
+      "name": "Flat Ground",
+      "type": "ground",
+      "weight": 50,
+      "connectors": {
+        "north": "flat",
+        "east": "flat",
+        "south": "flat",
+        "west": "flat"
+      },
+      "heightmap": "flat",
+      "variations": ["T001_var0", "T001_var1", "T001_var2"],
+      "tags": ["base", "ground", "walkable"]
+    },
+    {
+      "id": "T002",
+      "name": "Gentle Hill",
+      "type": "terrain",
+      "weight": 30,
+      "connectors": {
+        "north": "slope_up",
+        "east": "slope_up",
+        "south": "slope_down",
+        "west": "slope_down"
+      },
+      "heightmap": "hill_nw",
+      "variations": ["T002_var0"],
+      "tags": ["terrain", "hill", "height"]
+    },
+    {
+      "id": "T003",
+      "name": "Steep Hill",
+      "type": "terrain",
+      "weight": 20,
+      "connectors": {
+        "north": "steep_up",
+        "east": "steep_up",
+        "south": "steep_down",
+        "west": "steep_down"
+      },
+      "heightmap": "hill_steep",
+      "variations": ["T003_var0"],
+      "tags": ["terrain", "hill", "steep"]
+    },
+    {
+      "id": "T004",
+      "name": "Mountain Peak",
+      "type": "terrain",
+      "weight": 10,
+      "connectors": {
+        "north": "peak",
+        "east": "peak",
+        "south": "peak",
+        "west": "peak"
+      },
+      "heightmap": "mountain",
+      "variations": ["T004_var0", "T004_var1"],
+      "tags": ["terrain", "mountain", "peak", "impassable"]
+    },
+    {
+      "id": "T005",
+      "name": "River Horizontal",
+      "type": "water",
+      "weight": 15,
+      "connectors": {
+        "north": "water_shore",
+        "east": "water_flow",
+        "south": "water_shore",
+        "west": "water_flow"
+      },
+      "heightmap": "river_h",
+      "variations": ["T005_var0"],
+      "tags": ["water", "river", "horizontal"]
+    },
+    {
+      "id": "T006",
+      "name": "River Vertical",
+      "type": "water",
+      "weight": 15,
+      "connectors": {
+        "north": "water_flow",
+        "east": "water_shore",
+        "south": "water_flow",
+        "west": "water_shore"
+      },
+      "heightmap": "river_v",
+      "variations": ["T006_var0"],
+      "tags": ["water", "river", "vertical"]
+    },
+    {
+      "id": "T007",
+      "name": "Lake",
+      "type": "water",
+      "weight": 8,
+      "connectors": {
+        "north": "water_shore",
+        "east": "water_shore",
+        "south": "water_shore",
+        "west": "water_shore"
+      },
+      "heightmap": "lake",
+      "variations": ["T007_var0", "T007_var1"],
+      "tags": ["water", "lake", "still_water"]
+    },
+    {
+      "id": "T008",
+      "name": "Cliff North",
+      "type": "cliff",
+      "weight": 12,
+      "connectors": {
+        "north": "cliff_top",
+        "east": "cliff_side",
+        "south": "cliff_bottom",
+        "west": "cliff_side"
+      },
+      "heightmap": "cliff_n",
+      "variations": ["T008_var0"],
+      "tags": ["cliff", "impassable", "obstacle"]
+    },
+    {
+      "id": "T009",
+      "name": "Forest",
+      "type": "vegetation",
+      "weight": 25,
+      "connectors": {
+        "north": "forest",
+        "east": "forest",
+        "south": "forest",
+        "west": "forest"
+      },
+      "heightmap": "forest",
+      "variations": ["T009_var0", "T009_var1", "T009_var2"],
+      "tags": ["vegetation", "forest", "cover"]
+    },
+    {
+      "id": "T010",
+      "name": "Desert Dune",
+      "type": "terrain",
+      "weight": 18,
+      "connectors": {
+        "north": "sand",
+        "east": "sand",
+        "south": "sand",
+        "west": "sand"
+      },
+      "heightmap": "dune",
+      "variations": ["T010_var0"],
+      "tags": ["terrain", "desert", "sand"]
+    },
+    {
+      "id": "T011",
+      "name": "Snow Field",
+      "type": "terrain",
+      "weight": 15,
+      "connectors": {
+        "north": "snow",
+        "east": "snow",
+        "south": "snow",
+        "west": "snow"
+      },
+      "heightmap": "snow_flat",
+      "variations": ["T011_var0"],
+      "tags": ["terrain", "snow", "cold"]
+    },
+    {
+      "id": "T012",
+      "name": "Valley",
+      "type": "terrain",
+      "weight": 22,
+      "connectors": {
+        "north": "valley",
+        "east": "valley",
+        "south": "valley",
+        "west": "valley"
+      },
+      "heightmap": "valley",
+      "variations": ["T012_var0"],
+      "tags": ["terrain", "valley", "low"]
+    },
+    {
+      "id": "T013",
+      "name": "Swamp",
+      "type": "terrain",
+      "weight": 10,
+      "connectors": {
+        "north": "swamp",
+        "east": "swamp",
+        "south": "swamp",
+        "west": "swamp"
+      },
+      "heightmap": "swamp",
+      "variations": ["T013_var0"],
+      "tags": ["terrain", "swamp", "wet"]
+    },
+    {
+      "id": "T014",
+      "name": "Grassland",
+      "type": "vegetation",
+      "weight": 35,
+      "connectors": {
+        "north": "grass",
+        "east": "grass",
+        "south": "grass",
+        "west": "grass"
+      },
+      "heightmap": "grass",
+      "variations": ["T014_var0", "T014_var1"],
+      "tags": ["vegetation", "grass", "base"]
+    },
+    {
+      "id": "T015",
+      "name": "Rocky Terrain",
+      "type": "terrain",
+      "weight": 20,
+      "connectors": {
+        "north": "rock",
+        "east": "rock",
+        "south": "rock",
+        "west": "rock"
+      },
+      "heightmap": "rocky",
+      "variations": ["T015_var0"],
+      "tags": ["terrain", "rock", "rough"]
+    },
+    {
+      "id": "T016",
+      "name": "Canyon Floor",
+      "type": "terrain",
+      "weight": 8,
+      "connectors": {
+        "north": "canyon",
+        "east": "canyon",
+        "south": "canyon",
+        "west": "canyon"
+      },
+      "heightmap": "canyon_floor",
+      "variations": ["T016_var0"],
+      "tags": ["terrain", "canyon", "deep"]
+    },
+    {
+      "id": "T017",
+      "name": "Beach",
+      "type": "terrain",
+      "weight": 18,
+      "connectors": {
+        "north": "sand_beach",
+        "east": "sand_beach",
+        "south": "sand_beach",
+        "west": "sand_beach"
+      },
+      "heightmap": "beach",
+      "variations": ["T017_var0"],
+      "tags": ["terrain", "beach", "sand", "water_edge"]
+    },
+    {
+      "id": "T018",
+      "name": "Tundra",
+      "type": "terrain",
+      "weight": 12,
+      "connectors": {
+        "north": "tundra",
+        "east": "tundra",
+        "south": "tundra",
+        "west": "tundra"
+      },
+      "heightmap": "tundra",
+      "variations": ["T018_var0"],
+      "tags": ["terrain", "tundra", "cold", "flat"]
+    },
+    {
+      "id": "T019",
+      "name": "Volcanic Rock",
+      "type": "terrain",
+      "weight": 7,
+      "connectors": {
+        "north": "volcanic",
+        "east": "volcanic",
+        "south": "volcanic",
+        "west": "volcanic"
+      },
+      "heightmap": "volcanic",
+      "variations": ["T019_var0"],
+      "tags": ["terrain", "volcanic", "rock", "hot"]
+    },
+    {
+      "id": "T020",
+      "name": "Mud",
+      "type": "terrain",
+      "weight": 14,
+      "connectors": {
+        "north": "mud",
+        "east": "mud",
+        "south": "mud",
+        "west": "mud"
+      },
+      "heightmap": "mud",
+      "variations": ["T020_var0"],
+      "tags": ["terrain", "mud", "wet"]
+    },
+    {
+      "id": "T021",
+      "name": "Bridge Horizontal",
+      "type": "structure",
+      "weight": 5,
+      "connectors": {
+        "north": "structure",
+        "east": "bridge_h",
+        "south": "structure",
+        "west": "bridge_h"
+      },
+      "heightmap": "bridge_h",
+      "variations": ["T021_var0"],
+      "tags": ["structure", "bridge", "crossable"]
+    },
+    {
+      "id": "T022",
+      "name": "Bridge Vertical",
+      "type": "structure",
+      "weight": 5,
+      "connectors": {
+        "north": "bridge_v",
+        "east": "structure",
+        "south": "bridge_v",
+        "west": "structure"
+      },
+      "heightmap": "bridge_v",
+      "variations": ["T022_var0"],
+      "tags": ["structure", "bridge", "crossable"]
+    },
+    {
+      "id": "T023",
+      "name": "Road",
+      "type": "structure",
+      "weight": 20,
+      "connectors": {
+        "north": "road",
+        "east": "road",
+        "south": "road",
+        "west": "road"
+      },
+      "heightmap": "road",
+      "variations": ["T023_var0"],
+      "tags": ["structure", "road", "path"]
+    },
+    {
+      "id": "T024",
+      "name": "Ruins",
+      "type": "structure",
+      "weight": 6,
+      "connectors": {
+        "north": "ruins",
+        "east": "ruins",
+        "south": "ruins",
+        "west": "ruins"
+      },
+      "heightmap": "ruins",
+      "variations": ["T024_var0"],
+      "tags": ["structure", "ruins", "old"]
+    },
+    {
+      "id": "T025",
+      "name": "Crater",
+      "type": "terrain",
+      "weight": 4,
+      "connectors": {
+        "north": "crater",
+        "east": "crater",
+        "south": "crater",
+        "west": "crater"
+      },
+      "heightmap": "crater",
+      "variations": ["T025_var0"],
+      "tags": ["terrain", "crater", "depression"]
+    }
+  ],
+  "connectorRules": {
+    "flat": ["flat", "slope_down", "sand", "grass", "forest", "road", "structure"],
+    "slope_up": ["slope_up", "flat", "hill", "peak"],
+    "slope_down": ["slope_down", "flat", "hill", "valley"],
+    "steep_up": ["steep_up", "steep_down", "cliff_bottom"],
+    "steep_down": ["steep_down", "steep_up", "cliff_top"],
+    "peak": ["peak", "steep_down"],
+    "water_shore": ["flat", "sand_beach", "grass", "forest", "road"],
+    "water_flow": ["water_flow", "water_shore"],
+    "cliff_top": ["cliff_top", "peak", "steep_down"],
+    "cliff_side": ["cliff_side"],
+    "cliff_bottom": ["cliff_bottom", "flat", "valley"],
+    "forest": ["forest", "flat", "grass"],
+    "sand": ["sand", "flat", "dune", "sand_beach"],
+    "sand_beach": ["sand_beach", "water_shore", "sand"],
+    "snow": ["snow", "flat", "peak", "hill"],
+    "valley": ["valley", "flat", "swamp", "mud"],
+    "swamp": ["swamp", "valley", "water_shore"],
+    "grass": ["grass", "flat", "forest"],
+    "rock": ["rock", "cliff_side", "volcanic"],
+    "canyon": ["canyon", "cliff_bottom"],
+    "tundra": ["tundra", "flat", "snow"],
+    "volcanic": ["volcanic", "rock", "cliff_side"],
+    "mud": ["mud", "swamp", "valley"],
+    "structure": ["structure", "flat", "road"],
+    "bridge_h": ["bridge_h", "water_flow", "water_shore"],
+    "bridge_v": ["bridge_v", "water_flow", "water_shore"],
+    "road": ["road", "structure", "flat", "grass"],
+    "ruins": ["ruins", "rock", "flat"],
+    "crater": ["crater", "rock", "volcanic"]
+  },
+  "constraints": {
+    "maxSameAdjacency": 4,
+    "minDiversity": 3,
+    "waterCoverage": {"min": 0.05, "max": 0.3},
+    "terrainVariance": {"min": 0.1, "max": 0.7},
+    "structureDensity": {"min": 0, "max": 0.15}
+  }
+}

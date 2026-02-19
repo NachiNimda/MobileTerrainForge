@@ -1,0 +1,26 @@
+Tile ID,Name,North Connector,East Connector,South Connector,West Connector,Rotation Symmetry,Weight,Type
+T001,Flat Ground,flat,flat,flat,flat,true,50,ground
+T002,Gentle Hill,slope_up,slope_up,slope_down,slope_down,true,30,terrain
+T003,Steep Hill,steep_up,steep_up,steep_down,steep_down,true,20,terrain
+T004,Mountain Peak,peak,peak,peak,peak,true,10,terrain
+T005,River Horizontal,water_shore,water_flow,water_shore,water_flow,false,15,water
+T006,River Vertical,water_flow,water_shore,water_flow,water_shore,false,15,water
+T007,Lake,water_shore,water_shore,water_shore,water_shore,true,8,water
+T008,Cliff North,cliff_top,cliff_side,cliff_bottom,cliff_side,false,12,cliff
+T009,Forest,forest,forest,forest,forest,true,25,vegetation
+T010,Desert Dune,sand,sand,sand,sand,true,18,terrain
+T011,Snow Field,snow,snow,snow,snow,true,15,terrain
+T012,Valley,valley,valley,valley,valley,true,22,terrain
+T013,Swamp,swamp,swamp,swamp,swamp,true,10,terrain
+T014,Grassland,grass,grass,grass,grass,true,35,vegetation
+T015,Rocky Terrain,rock,rock,rock,rock,true,20,terrain
+T016,Canyon Floor,canyon,canyon,canyon,canyon,true,8,terrain
+T017,Beach,sand_beach,sand_beach,sand_beach,sand_beach,true,18,terrain
+T018,Tundra,tundra,tundra,tundra,tundra,true,12,terrain
+T019,Volcanic Rock,volcanic,volcanic,volcanic,volcanic,true,7,terrain
+T020,Mud,mud,mud,mud,mud,true,14,terrain
+T021,Bridge Horizontal,structure,bridge_h,structure,bridge_h,false,5,structure
+T022,Bridge Vertical,bridge_v,structure,bridge_v,structure,false,5,structure
+T023,Road,road,road,road,road,true,20,structure
+T024,Ruins,ruins,ruins,ruins,ruins,true,6,structure
+T025,Crater,crater,crater,crater,crater,true,4,terrain
